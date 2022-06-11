@@ -22,17 +22,17 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="Name">Name</label>
+                            <label>Name</label>
                             <input type="text" class="form-control" v-model="form.name">
                         </div>
 
                         <div class="form-group">
-                            <label for="Email">Email</label>
+                            <label>Email</label>
                             <input type="text" class="form-control" v-model="form.email">
                         </div>
 
                         <div class="form-group">
-                            <label for="Phone">Phone</label>
+                            <label>Phone</label>
                             <input type="text" class="form-control"  v-model="form.phone">
                         </div>
 
@@ -101,8 +101,9 @@
                     resetForm()
                     $("#myModal").modal('hide');
                 } catch(e) {
+                    console.log(e);
                     if (e.response.status === 422) {
-                        var data = [];
+                        const data = [];
                         for (const key in e.response.data.errors) {
                             data.push(e.response.data.errors[key][0]);
                         }

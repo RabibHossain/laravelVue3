@@ -19671,12 +19671,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 5:
                 resetForm();
                 $("#myModal").modal('hide');
-                _context2.next = 12;
+                _context2.next = 13;
                 break;
 
               case 9:
                 _context2.prev = 9;
                 _context2.t0 = _context2["catch"](0);
+                console.log(_context2.t0);
 
                 if (_context2.t0.response.status === 422) {
                   data = [];
@@ -19688,7 +19689,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   errors.value = data;
                 }
 
-              case 12:
+              case 13:
               case "end":
                 return _context2.stop();
             }
@@ -19801,9 +19802,7 @@ var _hoisted_9 = {
   "class": "form-group"
 };
 
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "Name"
-}, "Name", -1
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", null, "Name", -1
 /* HOISTED */
 );
 
@@ -19811,9 +19810,7 @@ var _hoisted_11 = {
   "class": "form-group"
 };
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "Email"
-}, "Email", -1
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", null, "Email", -1
 /* HOISTED */
 );
 
@@ -19821,9 +19818,7 @@ var _hoisted_13 = {
   "class": "form-group"
 };
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "Phone"
-}, "Phone", -1
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", null, "Phone", -1
 /* HOISTED */
 );
 
