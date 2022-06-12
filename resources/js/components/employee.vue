@@ -102,7 +102,6 @@
             });
 
             const getEmployees = async() => {
-                // console.log(api);
                 let res = await axios.get(api +'api/employees');
                 employees.value = res.data;
             }
